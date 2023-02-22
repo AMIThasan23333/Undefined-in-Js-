@@ -40,7 +40,9 @@ function third (a,b,c,d){
 third(2,4);
 
 
-/* =====4========= */
+/* =====4========= 
+if return has nothing on right side will return undefined
+*/
 
 
 function noNegative(a,b){
@@ -56,6 +58,26 @@ function noNegative(a,b){
   const total = noNegative(2,-4);
 
   console.log(total);
+
+
+/* ===5====
+property that do not exist will give undefined
+*/
+
+const fifth = {id: 2, name :'ponchom', age : 40}
+
+console.log(fifth.name,  fifth.again)
+
+/* =======6======= 
+
+
+accesssiong array element outside of index range 
+*/
+
+const sixth = [4,6,7,9,22,44];
+
+
+console.log(sixth[1],sixth[2], sixth[6])
 
 
 
