@@ -26,7 +26,7 @@ console.log(result);
 
 
 /* ====3======= 
-function with no parameter value
+parameter that do not passes will be undefined 
 */
 
 
@@ -34,10 +34,29 @@ function with no parameter value
 function third (a,b,c,d){
 
     const total = a+b+c+d;
-    console.log(a,b);
+    console.log(a,b,c,d);
 }
 
 third(2,4);
+
+
+/* =====4========= */
+
+
+function noNegative(a,b){
+
+    if(a < 0  || b < 0){
+
+        return
+    }
+
+    return a+b;
+}
+
+  const total = noNegative(2,-4);
+
+  console.log(total);
+
 
 
 
